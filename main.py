@@ -1,8 +1,8 @@
 text = input('Введіть текст: ')
-reserved_words = input('Введіть список зарезервованих слів: ').split()
 
-for word in text.split():
-    if word in reserved_words:
-        text = text.replace(word, word.upper())
+count = 0
 
-print(text)
+for sentence in text.split("."):
+        count += 1
+
+print(f"Кількість речень у тексті: {count}")
